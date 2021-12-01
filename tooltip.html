@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Tooltip</title>
+
+    <meta name="viewport" content="width=deivice-width;initial-scale=1">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div style="margin: 100px">
+            <a href="#" title="Delete the selected records" data-toggle="tooltip" data-placement="top">
+            Delete(top)</a>
+            <a href="#" title="Delete the selected records" data-toggle="tooltip" data-placement="bottom">
+            Delete(bottom)</a>
+            <a href="#" title="Delete the selected records" data-toggle="tooltip" data-placement="left">
+            Delete(left)</a>
+            <a href="#" title="Delete the selected records" data-toggle="tooltip" data-placement="right">
+            Delete(right)</a>
+        </div>
+
+        <div style="margin: 100px">
+            <button class="btn btn-success" title="Delete the selected records" data-toggle="tooltip" data-placement="top">Delete(top)</button>
+            <button class="btn btn-success" title="Delete the selected records" data-toggle="tooltip" data-placement="bottom">Delete(bottom)</button>
+            <button class="btn btn-success" title="Delete the selected records" data-toggle="tooltip" data-placement="left">Delete(left)</button>
+            <button class="btn btn-success" title="Delete the selected records" data-toggle="tooltip" data-placement="right">Delete(right)</button>
+        </div>
+        <script>
+            $("[data-toggle='tooltip']").tooltip();
+        </script>
+    </div>
+
+</body>
+
+</html>
